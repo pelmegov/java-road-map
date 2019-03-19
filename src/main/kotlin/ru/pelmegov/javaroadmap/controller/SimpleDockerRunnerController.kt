@@ -8,9 +8,7 @@ import ru.pelmegov.javaroadmap.service.ImageCreator
 import kotlin.random.Random
 
 @RestController
-class SimpleDockerRunnerController(
-    private val imageCreator: ImageCreator
-) {
+class SimpleDockerRunnerController(private val imageCreator: ImageCreator) {
 
     @GetMapping("/greeting")
     fun greeting(@RequestParam(value = "name", defaultValue = "World") name: String) {
