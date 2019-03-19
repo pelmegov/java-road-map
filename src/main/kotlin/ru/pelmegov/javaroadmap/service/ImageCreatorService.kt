@@ -8,7 +8,7 @@ import java.nio.file.Paths
 import java.util.concurrent.atomic.AtomicReference
 
 @Service
-class ImageCreator(
+class ImageCreatorService(
     private val resourceLoader: ResourceLoader,
     private val dockerClient: DockerClient
 ) {
